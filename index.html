@@ -5,16 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="static/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Orbitron:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
-            <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-            </ul>
+            <div id="dashboard-container">
+                <img src="static/icons/dashboard.svg" alt="4 squares">
+                <h2>Dashboard</h2>
+            </div>
+            <div class="option-dashboard">
+                <img src="static/icons/home.svg" alt="">
+                <h3>Home</h3>
+            </div>
+            <div class="option-dashboard">
+                <img src="static/icons/profile.svg" alt="">
+                <h3>Profile</h3>
+            </div>
+            <div class="option-dashboard">
+                <img src="static/icons/message.svg" alt="">
+                <h3>Messages</h3>
+            </div>
+            <div class="option-dashboard">
+                <img src="static/icons/history.svg" alt="">
+                <h3>History</h3>
+            </div>
+            <div class="option-dashboard">
+                <img src="static/icons/tasks.svg" alt="">
+                <h3>Tasks</h3>
+            </div>
+            <div class="option-dashboard">
+                <img src="static/icons/community.svg" alt="">
+                <h3>Communities</h3>
+            </div>
+            <div class="option-dashboard separate">
+                <img src="static/icons/settings.svg" alt="">
+                <h3>Settings</h3>
+            </div>
+            <div class="option-dashboard">
+                <img src="static/icons/support.svg" alt="">
+                <h3>Support</h3>
+            </div>
+            <div class="option-dashboard">
+                <img src="static/icons/privacy.svg" alt="">
+                <h3>Privacy</h3>
+            </div>
         </div>
+
         <div class="header">
             <p>placeholder</p>
         </div>
@@ -26,26 +65,56 @@
                 <div class="project-cards">
                     <h3>Test 1</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum laborum enim dolore fugiat numquam ratione tempora expedita asperiores ad autem?</p>
+                    <div class="icons-project-card">
+                        <img src="static/icons/favorite.svg" alt="star">
+                        <img src="static/icons/view-more.svg" alt="eye">
+                        <img src="static/icons/share.svg" alt="share">
+                    </div>
                 </div>
                 <div class="project-cards">
                     <h3>Test 2</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum laborum enim dolore fugiat numquam ratione tempora expedita asperiores ad autem?</p>
+                    <div class="icons-project-card">
+                        <img src="static/icons/favorite.svg" alt="star">
+                        <img src="static/icons/view-more.svg" alt="eye">
+                        <img src="static/icons/share.svg" alt="share">
+                    </div>
                 </div>
                 <div class="project-cards">
                     <h3>Test 3</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum laborum enim dolore fugiat numquam ratione tempora expedita asperiores ad autem?</p>
+                    <div class="icons-project-card">
+                        <img src="static/icons/favorite.svg" alt="star">
+                        <img src="static/icons/view-more.svg" alt="eye">
+                        <img src="static/icons/share.svg" alt="share">
+                    </div>
                 </div>
                 <div class="project-cards">
                     <h3>Test 4</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum laborum enim dolore fugiat numquam ratione tempora expedita asperiores ad autem?</p>
+                    <div class="icons-project-card">
+                        <img src="static/icons/favorite.svg" alt="star">
+                        <img src="static/icons/view-more.svg" alt="eye">
+                        <img src="static/icons/share.svg" alt="share">
+                    </div>
                 </div>
                 <div class="project-cards">
                     <h3>Test 5</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum laborum enim dolore fugiat numquam ratione tempora expedita asperiores ad autem?</p>
+                    <div class="icons-project-card">
+                        <img src="static/icons/favorite.svg" alt="star">
+                        <img src="static/icons/view-more.svg" alt="eye">
+                        <img src="static/icons/share.svg" alt="share">
+                    </div>
                 </div>
                 <div class="project-cards">
                     <h3>Test 6</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum laborum enim dolore fugiat numquam ratione tempora expedita asperiores ad autem?</p>
+                    <div class="icons-project-card">
+                        <img src="static/icons/favorite.svg" alt="star">
+                        <img src="static/icons/view-more.svg" alt="eye">
+                        <img src="static/icons/share.svg" alt="share">
+                    </div>
                 </div>
             </div>
             <div class="main-header-2">
@@ -71,12 +140,26 @@
                 <h2>Trending</h2>
             </div>
             <div class="trending-content">
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                </ul>
+                <img id="avatar-1" src="static/images/avatar_1.jpg" alt="">
+                <div id="avatar-1-description">
+                    <p class="avatar-name">@michaelmichaelson</p>
+                    <p class="avatar-title">Changing the World</p>
+                </div>
+                <img id="avatar-2" src="static/images/avatar_2.jpg" alt="">
+                <div id="avatar-2-description">
+                    <p class="avatar-name">@donalda</p>
+                    <p class="avatar-title">Trees are awesome</p>
+                </div>
+                <img id="avatar-3" src="static/images/avatar_3.jpg" alt="">
+                <div id="avatar-3-description">
+                    <p class="avatar-name">@jasonpat</p>
+                    <p class="avatar-title">Free Money Hack</p>
+                </div>
+                <img id="avatar-4" src="static/images/avatar_4.jpg" alt="">
+                <div id="avatar-4-description">
+                    <p class="avatar-name">@nadineled</p>
+                    <p class="avatar-title">Healthy Snacks</p>
+                </div>
             </div>
         </div>
     </div>
