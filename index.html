@@ -8,6 +8,20 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Orbitron:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const alertButton = document.querySelector("#alarm-icon");
+
+            alertButton.addEventListener("click", () => {
+                if (alertButton.src.includes("alarm-off.svg")) {
+                    alertButton.src = "static/icons/alarm-on.svg";
+                } else {
+                    alertButton.src = "static/icons/alarm-off.svg";
+                }
+            });
+        });
+        
+    </script>
 </head>
 <body>
     <div class="container">
@@ -55,8 +69,29 @@
         </div>
 
         <div class="header">
-            <p>placeholder</p>
+            <div class="header-row-1-column-1">
+                <img id="search-icon" src="static/icons/search.svg" alt="">
+                <input type="search">
+            </div>
+            <div class="header-row-1-column-2">
+                <img id="alarm-icon" src="static/icons/alarm-off.svg" alt="">
+                <img id="avatar-user-icon-small" src="static/images/avatar-user.jpg" alt="">
+                <h3>Peter Pan</h3>
+            </div>
+            <div class="header-row-2-column1">
+                <img id="avatar-user-icon-big" src="static/images/avatar-user.jpg" alt="">
+                <div id="user-intro">
+                    <p>Hi there,</p>
+                    <h3>Peter Pan (@ppan)</h3>
+                </div>
+            </div>
+            <div class="header-row-2-column-2">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
         </div>
+
         <div class="main">
             <div class="main-header-1">
                 <h2>Your Projects</h2>
